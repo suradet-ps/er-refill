@@ -6,7 +6,7 @@
   "build": {
     "beforeDevCommand": { "script": "trunk serve --port 1420", "cwd": "../app" },
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": { "script": "trunk build", "cwd": "../app" },
+    "beforeBuildCommand": { "script": "trunk build --release", "cwd": "../app" },
     "frontendDist": "../app/dist"
   },
   "app": {
@@ -14,11 +14,13 @@
     "windows": [
       {
         "title": "ER-Refill - ใบเบิกยาห้องฉุกเฉิน",
-        "width": 1120,
-        "height": 800,
+        "width": 1280,
+        "height": 900,
         "minWidth": 900,
         "minHeight": 620,
         "resizable": true,
+        "visible": false,
+        "backgroundColor": "#FEFBFD",
         "center": true
       }
     ],

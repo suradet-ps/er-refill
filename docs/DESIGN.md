@@ -242,8 +242,8 @@ layout exists.
 
 ### Grid & Container
 
-- Desktop window 1120×800 default, min 900×620 (a document tool; it does not
-  need to survive phone widths).
+- Desktop window 1280×900 default, clamped to the monitor work area, min
+  900×620 (a document tool; it does not need to survive phone widths).
 - The sheet is a real A4: `min(210mm, 100%)` wide, `297mm` min-height,
   12mm internal padding, `{elevation.3}` on the `{colors.surface}` desk.
   On print, `@page` owns the 12mm margins and the sheet drops its padding.
@@ -626,7 +626,8 @@ auto-dismiss after 5 seconds; warning/error toasts stay until dismissed.
 
 ## Responsive Behavior
 
-A fixed-purpose desktop window (Tauri), 1120×800 default, min 900×620:
+A fixed-purpose desktop window (Tauri), 1280×900 default (clamped to the
+monitor work area), min 900×620:
 
 | Window width | Behavior |
 |---|---|

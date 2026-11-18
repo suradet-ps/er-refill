@@ -29,7 +29,7 @@ md-5 = "0.10"                                         # verify HOSxP officer MD5
 serde = { version = "1.0", features = ["derive"] }    # serialization across the Tauri IPC boundary
 serde_json = "1.0"                                    # plain settings file on disk
 secrecy = { version = "0.10", features = ["serde"] }  # SecretString: password zeroized on drop, Debug-redacted
-sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio", "mysql", "chrono", "tls-rustls-ring-native-roots"] }  # SELECT-only MySQL access
+sqlx = { version = "0.9", default-features = false, features = ["runtime-tokio", "mysql", "chrono", "tls-rustls-ring-native-roots"] }  # SELECT-only MySQL access
 thiserror = "2"                                       # structured errors in library crates
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "time", "fs"] }  # async runtime + timeouts + settings file I/O
 tempfile = "3"                                        # dev: test-only config files
